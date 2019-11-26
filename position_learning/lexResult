@@ -1,0 +1,196 @@
+16	1	251		Keyword	using
+16	7	257		Keyword	namespace
+16	17	267	NamespaceRef	Identifier	std
+18	1	273		Keyword	bool
+18	6	278	VarDecl	Identifier	a
+18	7	279		Punctuation	[
+18	8	280	IntegerLiteral	Literal	10
+18	10	282		Punctuation	]
+19	1	285	TemplateRef	Identifier	set
+19	4	288		Punctuation	<
+19	5	289		Keyword	int
+19	8	292		Punctuation	>
+19	10	294	CallExpr	Identifier	book
+20	1	300		Keyword	int
+20	5	304	VarDecl	Identifier	n
+22	1	308		Keyword	int
+22	5	312	FunctionDecl	Identifier	main
+22	9	316		Punctuation	(
+22	10	317		Punctuation	)
+23	1	319		Punctuation	{
+24	2	322	DeclRefExpr	Identifier	cin
+24	6	326	DeclRefExpr	Punctuation	>>
+24	9	329	DeclRefExpr	Identifier	n
+24	10	330		Punctuation	;
+25	2	333		Keyword	for
+25	6	337		Punctuation	(
+25	7	338		Keyword	int
+25	11	342	VarDecl	Identifier	i
+25	13	344		Punctuation	=
+25	15	346	IntegerLiteral	Literal	0
+25	16	347		Punctuation	;
+25	18	349	DeclRefExpr	Identifier	i
+25	20	351		Punctuation	<
+25	22	353	IntegerLiteral	Literal	10
+25	24	355		Punctuation	;
+25	26	357	DeclRefExpr	Identifier	i
+25	27	358		Punctuation	++
+25	29	360		Punctuation	)
+26	2	363		Punctuation	{
+27	3	367	DeclRefExpr	Identifier	book
+27	7	371		Punctuation	.
+27	8	372	MemberRefExpr	Identifier	insert
+27	14	378		Punctuation	(
+27	15	379	DeclRefExpr	Identifier	i
+27	16	380		Punctuation	)
+27	17	381		Punctuation	;
+28	2	384		Punctuation	}
+29	2	387		Keyword	for
+29	6	391		Punctuation	(
+29	7	392		Keyword	int
+29	11	396	VarDecl	Identifier	i
+29	13	398		Punctuation	=
+29	15	400	IntegerLiteral	Literal	0
+29	16	401		Punctuation	;
+29	18	403	DeclRefExpr	Identifier	i
+29	20	405		Punctuation	<
+29	22	407	DeclRefExpr	Identifier	n
+29	23	408		Punctuation	;
+29	25	410	DeclRefExpr	Identifier	i
+29	26	411		Punctuation	++
+29	28	413		Punctuation	)
+30	2	416		Punctuation	{
+31	3	420		Keyword	char
+31	8	425	VarDecl	Identifier	s
+31	9	426		Punctuation	;
+32	3	430	DeclRefExpr	Identifier	cin
+32	7	434	DeclRefExpr	Punctuation	>>
+32	10	437	DeclRefExpr	Identifier	s
+32	11	438		Punctuation	;
+33	3	442		Keyword	if
+33	6	445		Punctuation	(
+33	7	446	DeclRefExpr	Identifier	s
+33	9	448		Punctuation	==
+33	12	451	CharacterLiteral	Literal	'L'
+33	15	454		Punctuation	)
+34	3	458		Punctuation	{
+35	4	463		Keyword	int
+35	8	467	VarDecl	Identifier	room
+35	13	472		Punctuation	=
+35	15	474	DeclRefExpr	Punctuation	*
+35	16	475		Punctuation	(
+35	17	476	DeclRefExpr	Identifier	book
+35	21	480		Punctuation	.
+35	22	481	MemberRefExpr	Identifier	begin
+35	27	486		Punctuation	(
+35	28	487		Punctuation	)
+35	29	488		Punctuation	)
+35	30	489		Punctuation	;
+36	4	494	DeclRefExpr	Identifier	book
+36	8	498		Punctuation	.
+36	9	499	MemberRefExpr	Identifier	erase
+36	14	504		Punctuation	(
+36	15	505	DeclRefExpr	Identifier	room
+36	19	509		Punctuation	)
+36	20	510		Punctuation	;
+37	4	515	DeclRefExpr	Identifier	a
+37	5	516		Punctuation	[
+37	6	517	DeclRefExpr	Identifier	room
+37	10	521		Punctuation	]
+37	12	523		Punctuation	=
+37	14	525	CXXBoolLiteralExpr	Keyword	true
+37	18	529		Punctuation	;
+38	3	533		Punctuation	}
+39	3	537		Keyword	if
+39	6	540		Punctuation	(
+39	7	541	DeclRefExpr	Identifier	s
+39	9	543		Punctuation	==
+39	12	546	CharacterLiteral	Literal	'R'
+39	15	549		Punctuation	)
+40	3	553		Punctuation	{
+41	4	558		Keyword	int
+41	8	562	VarDecl	Identifier	room
+41	13	567		Punctuation	=
+41	15	569	DeclRefExpr	Punctuation	*
+41	16	570		Punctuation	(
+41	17	571	DeclRefExpr	Punctuation	--
+41	19	573	DeclRefExpr	Identifier	book
+41	23	577		Punctuation	.
+41	24	578	MemberRefExpr	Identifier	end
+41	27	581		Punctuation	(
+41	28	582		Punctuation	)
+41	29	583		Punctuation	)
+41	30	584		Punctuation	;
+42	4	589	DeclRefExpr	Identifier	book
+42	8	593		Punctuation	.
+42	9	594	MemberRefExpr	Identifier	erase
+42	14	599		Punctuation	(
+42	15	600	DeclRefExpr	Identifier	room
+42	19	604		Punctuation	)
+42	20	605		Punctuation	;
+43	4	610	DeclRefExpr	Identifier	a
+43	5	611		Punctuation	[
+43	6	612	DeclRefExpr	Identifier	room
+43	10	616		Punctuation	]
+43	12	618		Punctuation	=
+43	14	620	CXXBoolLiteralExpr	Keyword	true
+43	18	624		Punctuation	;
+44	3	628		Punctuation	}
+45	3	632		Keyword	if
+45	6	635		Punctuation	(
+45	7	636	DeclRefExpr	Identifier	s
+45	9	638		Punctuation	!=
+45	12	641	CharacterLiteral	Literal	'R'
+45	16	645		Punctuation	&&
+45	19	648	DeclRefExpr	Identifier	s
+45	21	650		Punctuation	!=
+45	24	653	CharacterLiteral	Literal	'L'
+45	27	656		Punctuation	)
+46	3	660		Punctuation	{
+47	4	665		Keyword	int
+47	8	669	VarDecl	Identifier	x
+47	10	671		Punctuation	=
+47	12	673	DeclRefExpr	Identifier	s
+47	14	675		Punctuation	-
+47	16	677	CharacterLiteral	Literal	'0'
+47	19	680		Punctuation	;
+48	4	685	DeclRefExpr	Identifier	a
+48	5	686		Punctuation	[
+48	6	687	DeclRefExpr	Identifier	x
+48	7	688		Punctuation	]
+48	9	690		Punctuation	=
+48	11	692	IntegerLiteral	Literal	0
+48	12	693		Punctuation	;
+49	4	698	DeclRefExpr	Identifier	book
+49	8	702		Punctuation	.
+49	9	703	MemberRefExpr	Identifier	insert
+49	15	709		Punctuation	(
+49	16	710	DeclRefExpr	Identifier	x
+49	17	711		Punctuation	)
+49	18	712		Punctuation	;
+50	3	716		Punctuation	}
+52	2	720		Punctuation	}
+53	2	723		Keyword	for
+53	6	727		Punctuation	(
+53	7	728		Keyword	int
+53	11	732	VarDecl	Identifier	i
+53	13	734		Punctuation	=
+53	15	736	IntegerLiteral	Literal	0
+53	16	737		Punctuation	;
+53	18	739	DeclRefExpr	Identifier	i
+53	20	741		Punctuation	<
+53	22	743	IntegerLiteral	Literal	10
+53	24	745		Punctuation	;
+53	26	747	DeclRefExpr	Identifier	i
+53	27	748		Punctuation	++
+53	29	750		Punctuation	)
+54	2	753		Punctuation	{
+55	3	757	DeclRefExpr	Identifier	cout
+55	8	762	DeclRefExpr	Punctuation	<<
+55	11	765	DeclRefExpr	Identifier	a
+55	12	766		Punctuation	[
+55	13	767	DeclRefExpr	Identifier	i
+55	14	768		Punctuation	]
+55	15	769		Punctuation	;
+56	2	772		Punctuation	}
+63	1	781		Punctuation	}

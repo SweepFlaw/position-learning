@@ -1,2 +1,5 @@
 .ipynb_checkpoints
+position_learning.egg-info
+dist
+build
 data
