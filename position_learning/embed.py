@@ -110,3 +110,4 @@ def embedCSV(filename):
     return
 
   saveCSV(embeddedName, embedded)
+  return data
