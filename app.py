@@ -5,4 +5,4 @@ if __name__ == "__main__":
   filename = argv[1]
   recommendList = getRecommendList(filename)
   for (lin, col) in recommendList:
-    print(lin, ',', col)
+    print(lin, col, sep=',', end='\n')
