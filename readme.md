@@ -1,4 +1,4 @@
-# Position-Learining
+# Position-Learning
 - ## find semantically wrong position of variable
 
 # How to use
