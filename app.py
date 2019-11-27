@@ -1,6 +1,8 @@
 from position_learning import getRecommendList, saveName, embedCSV
+from sys import argv
 
 if __name__ == "__main__":
-  filename = '/newdisk/autofix/deeplearning/data/code.cpp'
+  filename = argv[1]
   recommendList = getRecommendList(filename)
-  print(recommendList)
+  for (lin, col) in recommendList:
+    print(lin, ',', col)
