@@ -1,7 +1,8 @@
 from position_learning import getRecommendList, saveName, embedCSV
-import os
+from sys import argv
 
 if __name__ == "__main__":
-  filename = os.path.dirname(os.path.realpath(__file__)) + '/data/code.cpp'
+  filename = argv[1]
   recommendList = getRecommendList(filename)
-  print(recommendList)
+  for (lin, col) in recommendList:
+    print(lin, col, sep=',', end='\n')
