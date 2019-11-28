@@ -1,5 +1,6 @@
 from torch import nn
 import torch
+from ..utils import readCSVNumber
 
 
 class RNN(nn.Module):
@@ -34,12 +35,10 @@ rnn.load_state_dict(torch.load('rnn_state'))
 rnn.eval()
 
 
-def readCSVNumber(filename):
-  lines = open(filename, encoding='utf-8').read().strip().split('\n')
-  return [[float(num) for num in line.split('\t')] for line in lines]
-
-
 def getVarDiffSequence(data):
+  '''
+  data shape is different with gru, shape(token length, 1, embedding length)
+  '''
   hidden = torch.zeros(1, n_hidden)
 
   predictList = []
