@@ -1,5 +1,6 @@
 from torch import nn
 import torch
+import os
 from ..utils import readCSVNumber
 
 # torch.cuda.is_available() checks and returns a Boolean True if a GPU is available, else it'll return False
@@ -36,7 +37,7 @@ n_output = 2
 n_hidden = 20
 n_layers = 1
 gru = GRUNet(n_input, n_hidden, n_output, n_layers)
-gru.load_state_dict(torch.load('gru_state'))
+gru.load_state_dict(torch.load(os.path.dirname(os.path.realpath(__file__)) + 'gru_state'))
 gru.eval()
 
 
