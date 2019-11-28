@@ -55,10 +55,12 @@ def heuristicSort(varSeq):
   length = len(varSeq)
   newSeq = []
 
+  frontlen = 10
+  backlen = -10
   if length > 50:
-    back = varSeq[-10:]
+    back = varSeq[backlen:]
     back.reverse()
-    newSeq += varSeq[0:10] + back + varSeq[20:-20]
+    newSeq += varSeq[0:frontlen] + back + varSeq[frontlen:backlen]
   else:
     newSeq = varSeq
   return newSeq
