@@ -44,7 +44,7 @@ def getVarDiffSequence(data):
   '''
   data shape is different with rnn, shape(token length, 1, 1, embedding length)
   '''
-  hidden = torch.zeros(1, n_hidden)
+  hidden = gru.initHidden(1)
 
   predictList = []
   for i in range(data.size()[0]):
