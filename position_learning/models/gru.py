@@ -37,7 +37,7 @@ n_output = 2
 n_hidden = 20
 n_layers = 1
 gru = GRUNet(n_input, n_hidden, n_output, n_layers)
-gru.load_state_dict(torch.load(os.path.dirname(os.path.realpath(__file__)) + 'gru_state'))
+gru.load_state_dict(torch.load(os.path.dirname(os.path.realpath(__file__)) + '/gru_state'))
 gru.eval()
 
 
